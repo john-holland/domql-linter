@@ -1,0 +1,33 @@
+{
+  "name": "domql-linter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "domql-lint": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node index.js",
+    "run-linter": "node run-linter.js",
+    "fix-components": "node fix-components.js"
+  },
+  "keywords": [
+    "domql",
+    "linter",
+    "static-analysis",
+    "webpack",
+    "ast"
+  ],
+  "author": "John Holland",
+  "license": "MIT",
+  "description": "A linter utility for DOMQL that validates property placement and structure",
+  "dependencies": {
+    "@babel/parser": "^7.28.4",
+    "@babel/traverse": "^7.28.4",
+    "@babel/types": "^7.28.4",
+    "acorn": "^8.15.0",
+    "acorn-walk": "^8.3.4",
+    "chalk": "^4.1.2",
+    "glob": "^11.0.3"
+  }
+}
